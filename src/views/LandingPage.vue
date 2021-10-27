@@ -60,7 +60,7 @@ export default defineComponent({
   align-items: center
   form
     border-radius: 5px
-    width: $xs
+    width: calc($xs - 20px)
     .logo
       font-family: $ubuntu
       font-size: 2em
@@ -92,4 +92,8 @@ export default defineComponent({
         text-decoration: underline
     .register-link
       margin-top: 24px
+@media screen and (min-width: $sm)
+  .landing
+    form
+      width: $xs
 </style>

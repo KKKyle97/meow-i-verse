@@ -4,7 +4,7 @@
 
     <form autocomplete="off" @submit="login">
       <div class="logo">
-        <span>mewoiverse</span>
+        <span>meowiverse</span>
       </div>
       <div class="input-section">
         <label for="username">Username</label>

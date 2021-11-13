@@ -146,6 +146,7 @@ export default defineComponent({
 @import "../../assets/sass/_colors"
 
 .appbar
+  background-color: $white
   height: 54px
   position: fixed
   top: 0

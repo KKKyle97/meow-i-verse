@@ -1,7 +1,14 @@
 <template>
   <DefaultLayout>
     <div class="chatlist-page">
-      <div class="chatlist-container"></div>
+      <div class="container">
+        <div class="chatlist">
+          <AccountSelection />
+        </div>
+        <div class="chat-content">
+          hello
+        </div>
+      </div>
     </div>
   </DefaultLayout>
 </template>
@@ -9,10 +16,12 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import DefaultLayout from "@/layouts/Default.vue";
+import AccountSelection from "@/components/chat-page/AccountSelection.vue";
 
 export default defineComponent({
   components: {
     DefaultLayout,
+    AccountSelection,
   },
 });
 </script>
@@ -24,7 +33,7 @@ export default defineComponent({
   padding: 20px
   height: calc(100vh - 54px)
 
-  .chatlist-container
+  .container
     max-width: 935px
     margin: 0 auto
     width: 100%
@@ -33,4 +42,8 @@ export default defineComponent({
     border: 1px solid $gray-200
     overflow: auto
     border-radius: 5px
+    display: flex
+    .chatlist
+      width: 350px
+      border-right: 1px solid $gray-200
 </style>

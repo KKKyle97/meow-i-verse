@@ -14,9 +14,7 @@
             <ChatListItemSkeleton />
           </div>
         </div>
-        <div class="chat-content">
-          hello
-        </div>
+        <EmptyChatContent />
       </div>
     </div>
   </DefaultLayout>
@@ -27,12 +25,14 @@ import { defineComponent } from "vue";
 import DefaultLayout from "@/layouts/Default.vue";
 import AccountSelection from "@/components/chat-page/AccountSelection.vue";
 import ChatListItemSkeleton from "@/components/chat-page/ChatListItemSkeleton.vue";
+import EmptyChatContent from "@/components/chat-page/EmptyChatContent.vue";
 
 export default defineComponent({
   components: {
     DefaultLayout,
     AccountSelection,
     ChatListItemSkeleton,
+    EmptyChatContent,
   },
 });
 </script>

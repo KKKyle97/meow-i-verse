@@ -19,7 +19,11 @@ export default defineComponent({
 </script>
 
 <style lang="sass" scoped>
+@import "../assets/sass/_colors"
+
 .default
+  min-height: 100vh
+  background-color: $bg-gray
   &__content
     padding-top: 54px
 </style>
